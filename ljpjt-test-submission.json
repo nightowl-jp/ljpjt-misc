@@ -1,16 +1,17 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "coliee-ljpjt-train",
+    "title": "coliee-ljpjt-submission",
     "description": "data scheme for coliee-ljpjt submission",
     "type": "object",
     "required": [
         "tort_id",
         "plaintiff_claims",
+        "defendant_claims",
         "court_decision"
     ],
     "properties" :{
         "tort_id": {
-            "type": "integer"
+            "type": "string"
         },
         "plaintiff_claims": {
             "type": "array",
@@ -23,7 +24,7 @@
                 ],
                 "properties": {
                     "id": {
-                        "type": "integer"
+                        "type": "string"
                     },
                     "description": {
                         "type": "string"
@@ -45,7 +46,7 @@
                 ],
                 "properties": {
                     "id": {
-                        "type": "integer"
+                        "type": "string"
                     },
                     "description": {
                         "type": "string"

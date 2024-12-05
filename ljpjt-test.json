@@ -6,11 +6,12 @@
     "required": [
         "tort_id",
         "undisputed_facts",
-        "plaintiff_claims"
+        "plaintiff_claims",
+        "defendant_claims"
     ],
     "properties" :{
         "tort_id": {
-            "type": "integer"
+            "type": "string"
         },
         "undisputed_facts": {
             "type": "array",
@@ -23,7 +24,7 @@
                 ],
                 "properties": {
                     "id": {
-                        "type": "integer"
+                        "type": "string"
                     },
                     "description": {
                         "type": "string"
@@ -42,7 +43,7 @@
                 ],
                 "properties": {
                     "id": {
-                        "type": "integer"
+                        "type": "string"
                     },
                     "description": {
                         "type": "string"
@@ -64,7 +65,7 @@
                 ],
                 "properties": {
                     "id": {
-                        "type": "integer"
+                        "type": "string"
                     },
                     "description": {
                         "type": "string"
