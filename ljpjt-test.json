@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "coliee-ljpjt-train",
+    "description": "data scheme for coliee-ljpjt test data",
+    "type": "object",
+    "required": [
+        "tort_id",
+        "undisputed_facts",
+        "plaintiff_claims"
+    ],
+    "properties" :{
+        "tort_id": {
+            "type": "integer"
+        },
+        "undisputed_facts": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "description"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "description": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "plaintiff_claims": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "description"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "is_accepted": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        },
+        "defendant_claims": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "description"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "is_accepted": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        },
+        "court_decision": {
+            "type": "boolean"
+        }
+    }
+}
